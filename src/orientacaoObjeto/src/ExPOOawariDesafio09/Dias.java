@@ -9,4 +9,11 @@ public class Dias {
         this.feriado = feriado;
     }
 
+    public int getData(){
+        return data;
+    }
+    public boolean getFeriado(){
+        return feriado;
+    }
+
 }

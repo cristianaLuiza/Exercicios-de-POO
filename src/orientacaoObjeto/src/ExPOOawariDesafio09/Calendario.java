@@ -1,87 +1,187 @@
 package orientacaoObjeto.src.ExPOOawariDesafio09;
-//
-//import java.util.ArrayList;
-//import java.util.List;
-//
-//public class Calendario {
-//    List<Dias> diasDoMes = new ArrayList<>();
-//
-//    public List<Dias> listarDiasMes(int meses) {
-//        switch (meses) {
-//            case 1:
-//                for (int i = 1; i <= 31; i++) {
-//                    boolean feriado = false;
-//                    if (i == 1) {
-//                        feriado = true;
-//                    }
-//                    Dias dia = new Dias(i, feriado);
-//                    diasDoMes.add(dia);
-//                }
-//                break;
-//                case 4:
-//                for (int i = 1; i <= 31; i++) {
-//                    boolean feriado = false;
-//                    if (i == 18) {
-//                        feriado = true;
-//                    }
-//                    Dias dia = new Dias(i, feriado);
-//                    diasDoMes.add(dia);
-//                }
-//                break;
-////            case 2:
-////                for (int i = 1; i <= 28; i++)
-////                    diasDoMes.add(i);
-////                break;
-////            case 3, 5, 7, 9, 11:
-////
-////                for (int i = 1; i <= 30; i++)
-////                    diasDoMes.add(i);
-////                break;
-////            default:
-////                return new ArrayList<>(); //LISTA VAZIA
-////        }
-////        return diasDoMes;
-//
-//
-//    /*
-//        Receber o dia e o mes do usuário;
-//        Salvar em uma variavel, os dias existentes de um determinado mês;
-//        Verificar se o dia recebido como parametro é feriado ou não;
-//        Se for feriado,
-//            exibir uma mensagem de que é feriado;
-//        Senão,
-//            exibir uma mensagem de que é dia comum;
-//     */
-////    public String verificarFeriado(int mes, int dia) { // mes = fevereiro, dia = 100
-////        List<Dias> diasMes = listarDiasMes(mes);
-////
-//////        if (mes == 1 & dia == 1) {
-////            String dia1 = "Dia 1º feriado ano novo";
-////        }
-////        } else if (mes == 3 & diasDoMes.equals(4)) {
-////            return "Dia 4º feriado carnaval";
-////        } else if (mes == 4 & diasDoMes.equals(18)) {
-////            return "Dia 18º feriado nossa senhora";
-////        } else if (mes == 4 & diasDoMes.contains(21)) {
-////            return "Dia 21º feriado Tira dentes";
-////        } else if (mes == 5 & diasDoMes.contains(1)) {
-////            return "Dia 1º feriado dia do trabalho";
-////        } else if (mes == 6 & diasDoMes.contains(19)) {
-////            return "Dia 19º feriado corpus cristi";
-////        } else if (mes == 9 & diasDoMes.contains(7)) {
-////            return "Dia 7º feriado independencia";
-////        }else if (mes == 10 & diasDoMes.contains(12)) {
-////            return "Dia 12º feriado nossa senhora";
-////        }else if (mes == 11 & diasDoMes.contains(2)) {
-////            return "Dia 2º feriado finados";
-////        }else if (mes == 12 & diasDoMes.contains(25)) {
-////            return "Dia 25º feriado natal";
-////        }else {
-////            System.out.println("O dia digitado não é um feriado");
-////        }
-////        return "";
-//
-//// “Calendario” que represente um calendário anual.
-//// Essa classe deve ter métodos para exibir o calendário
-//// de um determinado mês, verificar se uma data é feriado
-//// e calcular a diferença de dias entre duas datas.
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Calendario {
+
+    public List<Dias> listarDiasMes(int meses) {
+        List<Dias> diasDoMes = new ArrayList<>();
+        switch (meses) {
+            case 1:
+                for (int i = 1; i <= 31; i++) {
+                    boolean feriado = false;
+                    if (i == 1) {
+                        feriado = true;
+                    }
+                    Dias dia = new Dias(i, feriado);
+                    diasDoMes.add(dia);
+                }
+                break;
+
+            case 2:
+                for (int i = 1; i <= 28; i++) {
+                    boolean feriado = false;
+                    Dias dia = new Dias(i, feriado);
+                    diasDoMes.add(dia);
+                }
+                break;
+            case 3:
+                for (int i = 1; i <= 31; i++) {
+                    boolean feriado = false;
+                    if (i == 4) {
+                        feriado = true;
+                    }
+                    Dias dia = new Dias(i, feriado);
+                    diasDoMes.add(dia);
+                }
+                break;
+            case 4:
+                for (int i = 1; i <= 30; i++) {
+                    boolean feriado = false;
+                    if (i == 18) {
+                        feriado = true;
+                    }
+                    Dias dia = new Dias(i, feriado);
+                    diasDoMes.add(dia);
+                }
+                break;
+            case 5:
+                for (int i = 1; i <= 31; i++) {
+                    boolean feriado = false;
+                    if (i == 1) {
+                        feriado = true;
+                    }
+                    Dias dia = new Dias(i, feriado);
+                    diasDoMes.add(dia);
+                }
+                break;
+            case 6:
+                for (int i = 1; i <= 30; i++) {
+                    boolean feriado = false;
+                    if (i == 19) {
+                        feriado = true;
+                    }
+                    Dias dia = new Dias(i, feriado);
+                    diasDoMes.add(dia);
+                }
+                break;
+            case 7:
+                for (int i = 1; i <= 31; i++) {
+                    boolean feriado = false;
+                    Dias dia = new Dias(i, feriado);
+                    diasDoMes.add(dia);
+                }
+                break;
+            case 8:
+                for (int i = 1; i <= 30; i++) {
+                    boolean feriado = false;
+                    Dias dia = new Dias(i, feriado);
+                    diasDoMes.add(dia);
+                }
+                break;
+            case 9:
+                for (int i = 1; i <= 30; i++) {
+                    boolean feriado = false;
+                    if (i == 7) {
+                        feriado = true;
+                    }
+                    Dias dia = new Dias(i, feriado);
+                    diasDoMes.add(dia);
+                }
+                break;
+            case 10:
+                for (int i = 1; i <= 31; i++) {
+                    boolean feriado = false;
+                    if (i == 12) {
+                        feriado = true;
+                    }
+                    Dias dia = new Dias(i, feriado);
+                    diasDoMes.add(dia);
+                }
+                break;
+            case 11:
+                for (int i = 1; i <= 30; i++) {
+                    boolean feriado = false;
+                    if (i == 20) {
+                        feriado = true;
+                    }
+                    Dias dia = new Dias(i, feriado);
+                    diasDoMes.add(dia);
+                }
+                break;
+            case 12:
+                for (int i = 1; i <= 31; i++) {
+                    boolean feriado = false;
+                    if (i == 25) {
+                        feriado = true;
+                    }
+                    Dias dia = new Dias(i, feriado);
+                    diasDoMes.add(dia);
+                }
+                break;
+            default:
+                return new ArrayList<>(); //LISTA VAZIA
+        }
+        return diasDoMes;
+    }
+
+
+    /*
+        Receber o dia e o mes do usuário;
+        Salvar em uma variavel, os dias existentes de um determinado mês;
+        Verificar se o dia recebido como parametro é feriado ou não;
+        Se for feriado,
+            exibir uma mensagem de que é feriado;
+        Senão,
+            exibir uma mensagem de que é dia comum;
+     */
+
+    public String verificarFeriado(int mes, int dia) { // mes = fevereiro, dia = 100
+        List<Dias> diasMes = listarDiasMes(mes);
+        for (int i = 1; i < diasMes.size(); i++) {
+            Dias diaMes = diasMes.get(i);
+            int data = diaMes.getData();
+            if (data == dia) {
+                if (diaMes.getFeriado() == true) {
+                    return "É feriado";
+                } else {
+                    return "Dia comum";
+                }
+            }
+        }
+        return "Data inválida";
+    }
+
+    //  se meses iguais,
+    //      vou tratar o maior e fazer a sub dos dias;
+    //  se não os meses são !=
+    //      salvar a lista de dias de cada um deses meses em variáveis separadas
+    //      depois vou precisar decobrir para cada mês a != de dias entre a data escolhida e o total de dias daquele mês
+    //      por fim vou somar a diferença dos dois meses
+
+
+    public int calcularDiferencaDatas(int dia1, int mes1, int dia2, int mes2) {
+        int diferenca = 0;
+        if (mes1 == mes2) {
+
+            if (dia1 > dia2) {
+                 diferenca = dia1 - dia2;
+            } else {
+                 diferenca = dia2 - dia1;
+            }
+        } else if (mes1 != mes2) {
+            List<Dias> diasMes1 = listarDiasMes(mes1);
+            List<Dias> diasMes2 = listarDiasMes(mes2);
+            int diferenca1 = diasMes1.size() - dia1;
+            int diferenca2 = diasMes2.size() - dia2;
+
+            diferenca = diferenca1 + diferenca2;
+        }
+        return diferenca;
+    }
+}
+// “Calendario” que represente um calendário anual.
+// Essa classe deve ter métodos para exibir o calendário
+// de um determinado mês, verificar se uma data é feriado
+// e calcular a diferença de dias entre duas datas.

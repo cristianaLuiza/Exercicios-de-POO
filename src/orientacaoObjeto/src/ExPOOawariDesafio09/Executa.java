@@ -10,10 +10,15 @@ public class Executa {
         System.out.println("Digite um Dia");
         int dia = leia.nextInt();
 
-
         Calendario c1 = new Calendario();
+
         c1.listarDiasMes(mes);
-        c1.verificarFeriado(mes,dia);
-        System.out.println(c1.verificarFeriado(mes,dia));
+        c1.verificarFeriado(mes, dia);
+        System.out.println(c1.verificarFeriado(mes, dia));
+
+        c1.calcularDiferencaDatas(2,2,5,2);
+        System.out.println("Diferença das datas digitadas: " + c1.calcularDiferencaDatas(2,2,5,2));
+
+
     }
 }
